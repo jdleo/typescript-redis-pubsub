@@ -5,7 +5,7 @@ import * as redis from "redis";
 const publisher: redis.RedisClient = redis.createClient();
 
 // delay between messages (in ms)
-const delay: number = 10;
+const delay: number = 0.01;
 
 // run every 'delay' ms
 setTimeout(function run(): void {
