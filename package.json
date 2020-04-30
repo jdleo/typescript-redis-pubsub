@@ -1,11 +1,16 @@
 {
-  "name": "consumerproducer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "consumerproducer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "consumer": "ts-node ./lib/consumer.ts",
+        "producer": "ts-node ./lib/consumer.ts",
+        "start-consumer": "nodemon ./dist/consumer.js",
+        "start-producer": "nodemon ./dist/producer.js",
+        "prod": "npm run build && npm run start"
+    },
+    "author": "",
+    "license": "ISC"
 }
