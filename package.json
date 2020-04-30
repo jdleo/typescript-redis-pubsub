@@ -6,7 +6,7 @@
     "scripts": {
         "build": "tsc",
         "consumer": "ts-node ./lib/consumer.ts",
-        "producer": "ts-node ./lib/consumer.ts",
+        "producer": "ts-node ./lib/producer.ts",
         "start-consumer": "nodemon ./dist/consumer.js",
         "start-producer": "nodemon ./dist/producer.js",
         "prod": "npm run build && npm run start"
